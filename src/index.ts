@@ -27,11 +27,6 @@ const server = new McpServer({
       description: "Get a random Yo Mama joke",
       parameters: {}
     },
-    {
-      name: "get-power",
-      description: "Get a random Power",
-      parameters: {}
-    },
   ],
 });
 
