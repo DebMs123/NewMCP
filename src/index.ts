@@ -12,6 +12,7 @@ const servernext = new McpServer({
       description: "Get Power Automate",
       parameters: {}
     },
+  ],
   });
 
 // Get Power Automate tool
