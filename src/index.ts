@@ -28,7 +28,7 @@ const getPowerAutomate = server.tool(
       content: [
         {
           type: "text",
-          text: data,
+          text: data.value,
         },
       ],
     };
