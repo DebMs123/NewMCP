@@ -33,7 +33,6 @@ const getPowerAutomate = servernext.tool(
     };
   }
 );
-
 const app = express();
 
 // to support multiple simultaneous connections we have a lookup object from
