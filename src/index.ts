@@ -35,6 +35,18 @@ const server = new McpServer({
   ],
 });
 
+const servernext = new McpServer({
+  name: "powerMCP",
+  description: "A server that calls power automate",
+  version: "1.0.0",
+  tools: [
+    {
+      name: "get-power",
+      description: "Get a random Power",
+      parameters: {}
+    },
+  });
+
 // Get Chuck Norris joke tool
 const getChuckJoke = server.tool(
   "get-chuck-joke",
@@ -114,7 +126,7 @@ const getYoMamaJoke = server.tool(
 );
 
 // Get Power tool
-const getPower = server.tool(
+const getPower = servernext.tool(
   "get-power",
   "Get a random Power",
   async () => {
