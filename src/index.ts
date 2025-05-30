@@ -2,7 +2,7 @@ import express, { Request, Response } from "express";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
 
-const servernext = new McpServer({
+const server = new McpServer({
   name: "powerMCP",
   description: "A server that calls power automate",
   version: "1.0.0",
@@ -16,7 +16,7 @@ const servernext = new McpServer({
   });
 
 // Get Power Automate tool
-const getPowerAutomate = servernext.tool(
+const getPowerAutomate = server.tool(
   "get-power-automate",
   "Get Power Automate",
   async () => {
